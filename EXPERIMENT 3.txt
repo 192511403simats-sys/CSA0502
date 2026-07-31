@@ -1,0 +1,72 @@
+EXPERIMENT 3 
+
+1.mysql> SELECT * FROM STUDENT;
++-----------+--------+--------+------------+------------+------------+
+| RegNo     | Name   | Gender | DOB        | MobileNo   | City       |
++-----------+--------+--------+------------+------------+------------+
+| 191711341 | Arun   | M      | 2001-02-15 | 9876543210 | Chennai    |
+| 191711342 | Ramya  | M      | 2001-04-20 | 9876543211 | Coimbatore |
+| 191711343 | Priya  | F      | 2001-06-10 | 9876543212 | Madurai    |
+| 191711344 | Divya  | F      | 2001-08-25 | 9876543213 | Salem      |
+| 191711345 | Rahul  | M      | 2001-10-05 | 9876543214 | Trichy     |
+| 191711346 | Meena  | F      | 2001-12-18 | 9876543215 | Erode      |
+| 191711347 | Harish | M      | 2001-03-15 | 9876500016 | Salem      |
+|       101 | Ramya  | F      | 2006-05-10 | 9876543210 | Chennai    |
+|       102 | Anu    | F      | 2005-08-15 | 9123456780 | Madurai    |
+|       103 | Kavin  | M      | 2006-01-20 | 9988776655 | Coimbatore |
++-----------+--------+--------+------------+------------+------------+
+10 rows in set (0.00 sec)
+
+mysql>
+
+2.mysql> SELECT * FROM FACULTY;
++-------+---------+--------+------------+------------+------------+------+--------+------+
+| FacNo | FacName | Gender | DOB        | MobileNo   | DOJ        | Dept | Status | Age  |
++-------+---------+--------+------------+------------+------------+------+--------+------+
+|     1 | Priya   | F      | 1990-05-12 | 9876543210 | 2020-06-15 | CSE  | Active |   35 |
+|     2 | Ramesh  | M      | 1988-08-20 | 9123456789 | 2018-07-10 | CSE  | Active |   37 |
+|     3 | Divya   | F      | 1992-11-25 | 9988776655 | 2021-01-05 | IT   | Active |   33 |
+|   101 | Mohan   | M      | 1965-05-10 | 9876500001 | 1995-06-15 | NULL | Active |   59 |
+|   104 | Kamal   | M      | 1975-04-10 | 9876500019 | 2010-06-15 | 102  | Active |   50 |
++-------+---------+--------+------------+------------+------------+------+--------+------+
+5 rows in set (0.00 sec)
+3.mysql> SELECT * FROM COURSE;
++----------+----------------------------+------------+-------+--------+-------+
+| CourseNo | CourseDesc                 | CourseType | SemNo | HallNo | FacNo |
++----------+----------------------------+------------+-------+--------+-------+
+|        1 | Database Management System | Theory     |     5 |    101 |   101 |
+|        2 | Java Programming           | Theory     |     5 |    102 |   104 |
+|        3 | Python Programming         | Lab        |     5 |    103 |   103 |
+|        4 | Data Structures            | Theory     |     3 |    101 |   101 |
+|        5 | Computer Networks          | Theory     |     4 |    104 |   102 |
+|        6 | Statistics                 | Theory     |     5 |    105 |   103 |
+|        7 | Programming                | Theory     |     5 |    106 |   102 |
+|      101 | Database Management System | Theory     |     3 |    201 |     1 |
+|      102 | Java Programming           | Practical  |     3 |    202 |     2 |
+|      103 | Python Programming         | Theory     |     4 |    203 |     3 |
++----------+----------------------------+------------+-------+--------+-------+
+10 rows in set (0.00 sec)
+
+4.mysql> SELECT * FROM department;
++--------+-------------------------+-----------+
+| DeptNo | DeptName                | DeptHead  |
++--------+-------------------------+-----------+
+|      1 | Computer Science        | Dr. Kumar |
+|      2 | Information Technology  | Dr. Priya |
+|      3 | Artificial Intelligence | Dr. Raj   |
+|    101 | CSE                     | Dr. Kumar |
+|    102 | ECE                     | Dr. Ravi  |
+|    103 | IT                      | Dr. Priya |
+|    104 | MECH                    | Dr. Anand |
++--------+-------------------------+-----------+
+7 rows in set (0.00 sec)
+
+5.mysql> SELECT * FROM employees1;
++-------------+---------------+--------+
+| employee_id | employee_name | salary |
++-------------+---------------+--------+
+|           1 | Arun          |  30000 |
+|           2 | Meena         |  35000 |
+|           3 | Karthik       |  40000 |
++-------------+---------------+--------+
+3 rows in set (0.00 sec)
